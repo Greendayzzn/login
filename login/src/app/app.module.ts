@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { IndexComponent } from './view/index/index.component';
+import { AppRoutingModule } from './/app-routing.module';
+
 
 
 @NgModule({
@@ -12,7 +14,8 @@ import { IndexComponent } from './view/index/index.component';
     IndexComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
