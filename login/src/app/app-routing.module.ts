@@ -1,3 +1,5 @@
+import { RegisterComponent } from './view/register/register.component';
+import { LoginComponent } from './view/login/login.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
@@ -8,6 +10,15 @@ const routes: Routes = [
     path: "index",
     component: IndexComponent,
   },
+  {
+    path: "login",
+    component: LoginComponent,
+  },
+  {
+    path: "register",
+    component: RegisterComponent,
+  },
+  { path: '', redirectTo: '/register', pathMatch: 'full' },
 ]
 
 @NgModule({

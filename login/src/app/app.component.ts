@@ -17,13 +17,4 @@ export class AppComponent {
 
   title = 'app';
 
-  addClick(event: any) {
-    // {
-    //   path: 'index/';
-    //   component: IndexComponent
-    // }
-    // }
-    this.router.navigate(['/index']);
-  
-  }
 }
