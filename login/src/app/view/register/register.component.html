@@ -1,8 +1,8 @@
 <div>
   <div>
-     <span>用户名：</span><input type="text" name="username" /><br />
-  <span>密码：</span><input type="password" name="password" /> <br />
-  <button>登录</button>
+     <span>手机号：</span><input type="text" name="number" [(ngModel)]="user.number"/><br />
+  <span>密码：</span><input type="password" name="password" [(ngModel)]="user.password"/> <br />
+  <button (click)="loginClick($event);true">登录</button>
   <button (click)="addClick($event);true" >注册</button>
   <!-- <a routerLink="/index" routerLinkActive="active">First Component</a> -->
   </div>
