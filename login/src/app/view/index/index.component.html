@@ -1,3 +1,12 @@
-<p>
-  注册页面
-</p>
+<div>
+  <div>
+  <span>用户名：</span><input type="text" [(ngModel)]="user.username"><br />
+  <span>密码：</span><input type="password" name="password" [(ngModel)]="user.password"> <br />
+  <span>电话号码：</span><input type="text" name="number" [(ngModel)]="user.number"> <br />
+  <span>邮箱：</span><input type="text" name="email" [(ngModel)]="user.email"> <br />
+  <span>地址：</span><input type="text" name="address" [(ngModel)]="user.address"> <br />
+  <button (click)="submmitForm()">提交</button>
+  <!-- <button (click)="addClick($event);true" >注册</button> -->
+  </div>
+</div>
+<!-- <p>用户名：{{user.username}}</p> -->

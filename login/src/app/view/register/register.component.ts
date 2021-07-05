@@ -13,13 +13,7 @@ export class RegisterComponent implements OnInit {
     // public activatedRoute: ActivatedRoute
   ) { }
   addClick(event: any) {
-    // {
-    //   path: 'index/';
-    //   component: IndexComponent
-    // }
-    // }
     this.router.navigate(['/index'],);
-
   }
 
   ngOnInit() {
